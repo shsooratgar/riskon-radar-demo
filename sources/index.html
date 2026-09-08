@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources &amp; ingest — Operational Risk Radar</title>
+<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body class="page-sources">
+
+<header class="masthead">
+  <div class="masthead-main">
+    <p class="wordmark"><span class="rule"></span><a class="back" href="../">&larr; Radar</a></p>
+    <h1>Sources &amp; ingest</h1>
+    <p class="sub">Govern the evidence portfolio: coverage, feed health, provenance,
+      and the credibility each source contributes to event scoring.</p>
+  </div>
+  <div class="masthead-right">
+    <div class="masthead-meta" id="catalog-meta"></div>
+  </div>
+</header>
+
+<div class="banner demo-banner"><strong>Interactive public demo.</strong> <span>Edits are saved only in this browser. Live ingestion is simulated.</span></div>
+
+<main class="sources-main">
+  <section class="source-kpis" id="source-kpis" aria-label="Source portfolio summary"></section>
+
+  <section class="source-overview">
+    <article class="card coverage-card">
+      <div class="list-head">
+        <div>
+          <h2>Coverage portfolio</h2>
+          <p class="section-note">Diversity is visible, so a dead feed cannot quietly
+            bend the radar toward whichever source still works.</p>
+        </div>
+      </div>
+      <div id="coverage-bars"></div>
+    </article>
+
+    <article class="card governance-card">
+      <h2>Credibility methodology</h2>
+      <p class="section-note">A source tier supplies the default. An explicit override
+        is versioned, explained, and copied into the corpus before scoring.</p>
+      <div id="tier-defaults" class="tier-defaults"></div>
+      <ul class="guardrails">
+        <li>Stable IDs preserve history across renames.</li>
+        <li>Archive stops future ingestion; collected evidence remains.</li>
+        <li>Only HTTP(S) feeds are accepted.</li>
+        <li>Catalog and ingestion changes enter rankings on the next pipeline run.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="card source-catalog-card">
+    <div class="catalog-head">
+      <div>
+        <h2>Source catalog</h2>
+        <p class="section-note" id="catalog-count"></p>
+      </div>
+      <div class="catalog-actions">
+        <label class="source-search"><span class="sr-only">Search sources</span>
+          <input id="source-search" type="search" placeholder="Search name, ID or URL">
+        </label>
+        <select id="source-filter" aria-label="Filter sources">
+          <option value="enabled">Enabled</option>
+          <option value="all">All sources</option>
+          <option value="archived">Archived</option>
+          <option value="needs_check">Needs check</option>
+        </select>
+        <button class="btn btn-primary" id="add-source" type="button">+ Add source</button>
+      </div>
+    </div>
+    <div id="source-list" class="source-list"></div>
+  </section>
+
+  <section class="card catalog-history">
+    <div class="list-head"><h2>Catalog revisions</h2><span class="count">auditable, never overwritten</span></div>
+    <ul class="rev-list" id="catalog-history"></ul>
+  </section>
+</main>
+
+<footer class="panel-foot source-foot">
+  <input type="text" id="catalog-note" placeholder="What changed, in a few words" maxlength="120">
+  <span class="panel-foot-spacer"></span>
+  <a class="btn" href="../downloads/sources.yaml" download>Export YAML</a>
+  <button class="btn" id="catalog-reset" type="button">Reset to file</button>
+  <button class="btn btn-primary" id="catalog-save" type="button">Save revision</button>
+</footer>
+<p class="panel-status source-status" id="source-status" aria-live="polite"></p>
+
+<script src="../static/demo-api.js"></script>
+<script src="../static/sources.js"></script>
+</body>
+</html>

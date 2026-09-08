@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risk profile — Operational Risk Radar</title>
+<link rel="stylesheet" href="../static/styles.css">
+</head>
+<body class="page-profile">
+
+<header class="masthead">
+  <div class="masthead-main">
+    <p class="wordmark"><span class="rule"></span><a class="back" href="../">&larr; Radar</a></p>
+    <h1>Risk profile</h1>
+    <p class="sub">The institution the radar scores against. Every number on the
+    radar is <b>conditional on this page</b>.</p>
+  </div>
+  <div class="masthead-right">
+    <div class="masthead-meta" id="profile-source"></div>
+  </div>
+</header>
+
+<div class="banner demo-banner"><strong>Interactive public demo.</strong> <span>Edits are saved only in this browser. Live ingestion is simulated.</span></div>
+
+<nav class="panel-tabs" id="profile-tabs" role="tablist">
+  <button class="tab is-active" data-tab="identity" role="tab">Identity</button>
+  <button class="tab" data-tab="activities" role="tab">Activities</button>
+  <button class="tab" data-tab="technology" role="tab">Technology</button>
+  <button class="tab" data-tab="vendors" role="tab">Vendors</button>
+  <button class="tab" data-tab="controls" role="tab">Controls</button>
+  <button class="tab" data-tab="weaknesses" role="tab">Weaknesses</button>
+  <button class="tab" data-tab="history" role="tab">History</button>
+</nav>
+
+<main class="profile-main">
+  <div class="panel-body" id="profile-body"></div>
+</main>
+
+<footer class="panel-foot profile-foot">
+  <input type="text" id="profile-note" placeholder="What changed, in a few words" maxlength="120">
+  <span class="panel-foot-spacer"></span>
+  <a class="btn" href="../downloads/bank_profile.yaml" download>Export YAML</a>
+  <button class="btn" id="profile-reset">Reset to file</button>
+  <button class="btn btn-primary" id="profile-save">Save revision</button>
+</footer>
+<p class="panel-status profile-status-page" id="profile-status" aria-live="polite"></p>
+
+<script src="../static/demo-api.js"></script>
+<script src="../static/profile.js"></script>
+</body>
+</html>

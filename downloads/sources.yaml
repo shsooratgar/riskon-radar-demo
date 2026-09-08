@@ -1,0 +1,271 @@
+# =============================================================
+# SOURCE CATALOG — exported from Operational Risk Radar
+#
+# Revision 3, exported 2026-09-08 18:40 UTC.
+# Credibility overrides are explicit, versioned judgements.
+# Retiring a source never deletes articles already collected.
+# =============================================================
+
+sources:
+- id: finma_de
+  name: FINMA news (DE)
+  kind: rss
+  url: https://www.finma.ch/de/rss/news/
+  tier: regulator
+  language: de
+  enabled: true
+  category: regulatory
+  reach: official
+- id: finma_en
+  name: FINMA news (EN)
+  kind: rss
+  url: https://www.finma.ch/en/rss/news/
+  tier: regulator
+  language: en
+  enabled: true
+  category: regulatory
+  reach: official
+- id: snb_press
+  name: Swiss National Bank press releases
+  kind: rss
+  url: https://www.snb.ch/public/rss/en/pressrel
+  tier: regulator
+  language: en
+  enabled: true
+  category: regulatory
+  reach: official
+- id: six_newsboard
+  name: SIX Swiss Exchange Newsboard
+  kind: rss
+  url: https://www.six-group.com/itf-data/newsboard/en.xml
+  tier: vendor
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: official
+- id: bafin_enf
+  name: BaFin Massnahmen
+  kind: rss
+  url: https://www.bafin.de/DE/service/rss/_function/RSS_Massnahmen.xml?nn=150166
+  tier: regulator
+  language: de
+  enabled: true
+  category: regulatory
+  reach: official
+- id: bafin_circ
+  name: BaFin Rundschreiben
+  kind: rss
+  url: https://www.bafin.de/DE/service/rss/_function/RSS_Rundschreiben.xml?nn=150166
+  tier: regulator
+  language: de
+  enabled: true
+  category: regulatory
+  reach: official
+- id: fca
+  name: FCA
+  kind: rss
+  url: https://www.fca.org.uk/news/rss.xml
+  tier: regulator
+  language: en
+  enabled: true
+  category: regulatory
+  reach: official
+- id: sec_admin
+  name: SEC Admin Proceedings
+  kind: rss
+  url: https://www.sec.gov/rss/litigation/admin.xml
+  tier: regulator
+  language: en
+  enabled: true
+  category: regulatory
+  reach: official
+- id: ecb_ssm
+  name: ECB Banking Supervision
+  kind: rss
+  url: https://www.bankingsupervision.europa.eu/rss/press.xml
+  tier: regulator
+  language: en
+  enabled: true
+  category: regulatory
+  reach: official
+- id: eba
+  name: European Banking Authority
+  kind: rss
+  url: https://www.eba.europa.eu/rss.xml
+  tier: regulator
+  language: en
+  enabled: true
+  category: regulatory
+  reach: official
+- id: nzz_wirt
+  name: NZZ Wirtschaft
+  kind: rss
+  url: https://www.nzz.ch/wirtschaft.rss
+  tier: quality_press
+  language: de
+  enabled: true
+  category: financial_press
+  reach: quality_domestic
+- id: finews_de
+  name: finews.ch
+  kind: rss
+  url: https://www.finews.ch/news/banken?format=feed&type=rss
+  tier: trade_press
+  language: de
+  enabled: true
+  category: industry_press
+  reach: trade
+- id: finews_com
+  name: finews.com
+  kind: rss
+  url: https://www.finews.com/news/english-news?format=feed&type=rss
+  tier: trade_press
+  language: en
+  enabled: true
+  category: industry_press
+  reach: trade
+- id: cert_eu_advisories
+  name: CERT-EU Security Advisories
+  kind: rss
+  url: https://cert.europa.eu/publications/security-advisories-rss
+  tier: regulator
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: official
+- id: cert_eu_threat_intel
+  name: CERT-EU Threat Intelligence
+  kind: rss
+  url: https://cert.europa.eu/publications/threat-intelligence-rss
+  tier: regulator
+  language: en
+  enabled: true
+  category: regulatory
+  reach: official
+- id: microsoft_security
+  name: Microsoft Security Blog
+  kind: rss
+  url: https://www.microsoft.com/en-us/security/blog/feed/
+  tier: vendor
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: specialist
+- id: cisa_alerts
+  name: CISA Advisories
+  kind: rss
+  url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+  tier: regulator
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: official
+- id: krebs
+  name: KrebsOnSecurity
+  kind: rss
+  url: https://krebsonsecurity.com/feed/
+  tier: trade_press
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: specialist
+- id: bleeping
+  name: BleepingComputer
+  kind: rss
+  url: https://www.bleepingcomputer.com/feed/
+  tier: trade_press
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: specialist
+- id: theregister_sec
+  name: The Register — Security
+  kind: atom
+  url: https://www.theregister.com/security/headlines.atom
+  tier: trade_press
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: specialist
+- id: azure_status
+  name: Microsoft Azure Status
+  kind: rss
+  url: https://azure.status.microsoft/en-us/status/feed/
+  tier: vendor
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: official
+- id: cloudflare_status
+  name: Cloudflare Status
+  kind: atom
+  url: https://www.cloudflarestatus.com/history.atom
+  tier: vendor
+  language: en
+  enabled: false
+  category: cyber_security
+  reach: official
+- id: aws_status
+  name: AWS Service Health
+  kind: rss
+  url: https://status.aws.amazon.com/rss/all.rss
+  tier: vendor
+  language: en
+  enabled: false
+  category: cyber_security
+  reach: official
+- id: github_status
+  name: GitHub Status
+  kind: atom
+  url: https://www.githubstatus.com/history.atom
+  tier: vendor
+  language: en
+  enabled: false
+  category: cyber_security
+  reach: official
+- id: openai_status
+  name: OpenAI Service Status
+  kind: atom
+  url: https://status.openai.com/history.atom
+  tier: vendor
+  language: en
+  enabled: false
+  category: cyber_security
+  reach: official
+- id: openai_news
+  name: OpenAI News and Security
+  kind: rss
+  url: https://openai.com/news/rss.xml
+  tier: vendor
+  language: en
+  enabled: true
+  category: cyber_security
+  reach: official
+- id: twentymin
+  name: 20 Minuten
+  kind: rss
+  url: https://partner-feeds.20min.ch/rss/20minuten
+  tier: aggregator
+  language: de
+  enabled: true
+  category: other
+  credibility_note: Tabloid. Carried for audience, not for its claims.
+  reach: mass_domestic
+- id: srf_news
+  name: SRF News
+  kind: rss
+  url: https://www.srf.ch/news/bnf/rss/1646
+  tier: quality_press
+  language: de
+  enabled: true
+  category: financial_press
+  reach: mass_domestic
+- id: cash_ch
+  name: cash.ch
+  kind: rss
+  url: https://www.cash.ch/feeds/latest/news
+  tier: trade_press
+  language: de
+  enabled: true
+  category: industry_press
+  reach: quality_domestic

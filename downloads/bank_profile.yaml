@@ -1,0 +1,169 @@
+# =============================================================
+# RISK PROFILE — exported from the radar's profile panel
+#
+# Revision 0, exported 2026-09-08 18:40 UTC.
+#
+# HYPOTHETICAL, AND OURS. This is not any real bank's risk profile
+# and does not claim to be. Every score the radar produces is
+# conditional on this file.
+#
+# Comments from a hand-edited original are not preserved by export —
+# a parser cannot round-trip them. Re-annotate before committing.
+# =============================================================
+
+name: Hypothetical mid-sized European universal bank
+declared: true
+peer_class: universal
+jurisdictions:
+- EU
+regulators:
+- National prudential regulator
+scale:
+  balance_sheet_band: EUR 50–100bn
+  employees_band: 3,000–5,000
+  retail_clients_band: '> 500k'
+  note: Domestic-focused. No US retail presence or proprietary crypto custody.
+ownership:
+  model: private
+  state_guarantee: false
+  political_oversight: null
+  reputation_sensitivity: medium
+  reputation_note: Customer access, payment continuity, data integrity and regulatory trust drive impact.
+activities:
+- id: retail_payments
+  name: Retail and corporate payments
+  scale: high
+  notes: Domestic clearing, SEPA, SWIFT, instant payments, standing orders, salary runs.
+- id: cards
+  name: Card issuing and acquiring
+  scale: medium
+- id: deposits
+  name: Deposits and current accounts
+  scale: high
+- id: mortgages
+  name: Mortgage and real-estate lending
+  scale: high
+  notes: Largest single balance-sheet exposure for a bank of this shape.
+- id: corporate_lending
+  name: Corporate lending
+  scale: medium
+- id: wealth
+  name: Investment advisory, custody and pensions
+  scale: high
+- id: trading
+  name: Trading and market making
+  scale: medium
+  notes: Client-driven. Limited proprietary risk-taking.
+- id: digital_channels
+  name: Online and mobile banking
+  scale: high
+not_performed:
+- US retail banking
+- Proprietary crypto custody or exchange operation
+- Insurance underwriting
+- Investment banking underwriting at global scale
+- Consumer credit cards at monoline scale
+technology:
+- id: core_banking
+  name: Third-party core banking platform
+  kind: core_banking
+  used: true
+  criticality: medium
+- id: payments_rails
+  name: Domestic clearing, SEPA, SWIFT
+  kind: payments_rails
+  used: true
+  criticality: medium
+- id: cloud
+  name: Hybrid; regulated workloads on-premises, some SaaS for non-core
+  kind: cloud
+  used: true
+  criticality: medium
+- id: identity
+  name: Centralised IAM with role-based entitlements
+  kind: identity
+  used: true
+  criticality: medium
+- id: common_vendors
+  name: Major cloud provider, Enterprise ERP vendor, Core banking vendor
+  kind: common_vendors
+  used: true
+  criticality: medium
+- id: channels
+  name: In-house mobile and web banking, third-party aggregator access
+  kind: channels
+  used: true
+  criticality: medium
+vendors: []
+controls:
+- id: four_eyes_payments
+  name: Four-eyes approval on payment release above threshold
+  covers:
+  - retail_payments
+  - corporate_lending
+- id: daily_reconciliation
+  name: Daily reconciliation of settlement and nostro accounts
+  covers:
+  - retail_payments
+  - cards
+  - deposits
+- id: batch_monitoring
+  name: Batch job monitoring with duplicate-run detection
+  type: detective
+  covers:
+  - retail_payments
+  - deposits
+  notes: Detective, not preventive. Catches a double run after execution.
+- id: change_release_gates
+  name: Segregated change management with staged release and rollback
+  covers:
+  - digital_channels
+  - retail_payments
+  - wealth
+- id: privileged_access_review
+  name: Quarterly privileged access recertification
+  covers:
+  - digital_channels
+  - trading
+  - wealth
+- id: vendor_due_diligence
+  name: Third-party due diligence and concentration monitoring
+  covers:
+  - retail_payments
+  - digital_channels
+- id: aml_transaction_monitoring
+  name: Automated AML transaction monitoring and sanctions screening
+  covers:
+  - retail_payments
+  - deposits
+  - wealth
+- id: suitability_checks
+  name: Advice suitability checks and product governance
+  covers:
+  - wealth
+- id: trading_limits
+  name: Pre-trade limits and end-of-day position reconciliation
+  covers:
+  - trading
+- id: bcm_failover
+  name: Documented BCM with tested failover for critical functions
+  covers:
+  - retail_payments
+  - digital_channels
+  - deposits
+- id: model_validation
+  name: Independent model validation and periodic backtesting
+  covers:
+  - mortgages
+  - trading
+known_weaknesses:
+- Detective rather than preventive coverage on batch processing
+- Concentration on a small number of core platform vendors
+- Third-party and fourth-party visibility beyond direct suppliers
+- Manual handoffs remain in parts of corporate onboarding
+operating_model: 'Domestic universal bank. Retail and mortgage heavy, with a substantial advisory and
+  custody business. Technology is largely vendor core-banking with in-house channels on top. Operations
+  are centralised rather than distributed across entities, so a processing failure tends to affect one
+  large population at once rather than several small ones.
+
+  '

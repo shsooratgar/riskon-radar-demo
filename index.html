@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operational Risk Radar</title>
+<link rel="stylesheet" href="static/styles.css">
+</head>
+<body data-palette="#1964dc,#eb6834,#00a0a8">
+
+<header class="masthead">
+  <div class="masthead-main">
+    <p class="wordmark"><span class="rule"></span>RiskON 2026 &middot; Challenge 2</p>
+    <h1>Operational Risk Radar</h1>
+    <p class="sub">External operational risk events, scored for transferability and materiality.</p>
+  </div>
+  <div class="masthead-right">
+    <div class="mode-wrap">
+      <div class="mode" id="mode" role="group" aria-label="Analysis engine">
+        <span class="mode-label">Engine</span>
+        <button class="mode-btn" id="mode-local" data-backend="local">Private</button>
+        <button class="mode-btn" id="mode-frontier" data-backend="anthropic">Claude</button>
+        <button class="mode-btn" id="mode-openai" data-backend="openai">OpenAI/Kimi</button>
+      </div>
+      <span class="mode-note" id="mode-note"></span>
+    </div>
+    <div class="masthead-meta" id="meta"></div>
+  </div>
+</header>
+
+<div class="banner" id="config-banner" hidden>
+  <strong>Interactive public demo.</strong>
+  <span>Sample data only. Edits stay in this browser; live ingestion is simulated.</span>
+</div>
+
+<nav class="controls">
+  <label class="control check">
+    <input type="checkbox" id="threshold-toggle">
+    <span>Could happen here <output id="threshold-out"></output></span>
+  </label>
+  <label class="control">
+    <span>Category</span>
+    <select id="cat-filter"><option value="">all</option></select>
+  </label>
+  <label class="control">
+    <span>Event type</span>
+    <select id="type-filter">
+      <option value="">all</option>
+      <option value="incident">incident</option>
+      <option value="regulatory_change">regulatory change</option>
+      <option value="capability_shift">capability shift</option>
+    </select>
+  </label>
+  <label class="control">
+    <span>Period</span>
+    <select id="period-filter">
+      <option value="">all time</option>
+      <option value="7">last 7 days</option>
+      <option value="30">last 30 days</option>
+      <option value="90">last quarter</option>
+      <option value="month">a month…</option>
+    </select>
+  </label>
+  <label class="control" id="month-wrap" hidden>
+    <span>Month</span>
+    <input type="month" id="month-filter">
+  </label>
+  <label class="control check" id="asat-wrap" hidden>
+    <input type="checkbox" id="asat-toggle" checked>
+    <span>Rank as it looked then</span>
+  </label>
+  <label class="control">
+    <span>Show</span>
+    <select id="top-filter">
+      <option value="">everything</option>
+      <option value="10">top 10</option>
+      <option value="25">top 25</option>
+      <option value="cat10">top 10 per category</option>
+    </select>
+  </label>
+  <label class="control">
+    <span>Status</span>
+    <select id="disposition-filter">
+      <option value="">all</option>
+      <option value="open">open only</option>
+      <option value="new">new</option>
+      <option value="in_review">in review</option>
+      <option value="actioned">actioned</option>
+      <option value="closed">closed</option>
+      <option value="not_relevant">not relevant</option>
+      <option value="accepted_risk">accepted risk</option>
+    </select>
+  </label>
+  <label class="control check">
+    <input type="checkbox" id="review-filter">
+    <span>Needs review</span>
+  </label>
+  <span class="control-spacer"></span>
+
+  <a class="btn btn-primary" href="sources/">Sources &amp; ingest</a>
+  <a class="btn" href="profile/">Risk profile</a>
+  <button class="btn-quiet" id="inputs-toggle" aria-expanded="false"
+          aria-controls="inputs-card"
+          title="Which reference inputs are connected, and what each absence costs">inputs</button>
+  <button class="btn-quiet" id="calib-toggle" aria-expanded="false"
+          aria-controls="calibration-card"
+          title="Reliability of the transferability score against business verdicts">calibration</button>
+</nav>
+
+<main>
+  <section class="charts">
+    <figure class="card chart-card">
+      <figcaption>
+        <h2>Risk profile by category</h2>
+        <p>Total priority accumulated in each taxonomy category. A long spoke means
+           attention is concentrated there.</p>
+      </figcaption>
+      <div class="chart-body"><svg id="radar" role="img" aria-label="Radar chart of accumulated priority per risk category"></svg></div>
+      <div class="legend" id="radar-legend"></div>
+    </figure>
+
+    <figure class="card chart-card">
+      <figcaption>
+        <h2>Where events land</h2>
+        <p>Likelihood against impact on the internal risk matrix. Both axes are
+           inverted by design — 1 and A are the most severe.</p>
+      </figcaption>
+      <div class="chart-body"><svg id="matrix" role="img" aria-label="Risk matrix showing event counts by likelihood and impact"></svg></div>
+    </figure>
+  </section>
+
+  <figure class="card wide" id="inputs-card" hidden>
+    <figcaption>
+      <h2>What the radar is scoring against</h2>
+      <p>Every input a bank supplies. An absent one does not lower a score — it removes
+         a question from the assessment, and every event after that is missing it. So
+         the missing ones are named, along with what supplying them would answer.</p>
+    </figcaption>
+    <div id="inputs-body"></div>
+  </figure>
+
+  <figure class="card chart-card wide" id="calibration-card" hidden>
+    <figcaption>
+      <h2>Is the score telling the truth?</h2>
+      <p>A transferability of 0.8 claims four in five such events turn out to be relevant
+         when the owner is asked. Each consultation tests that claim — the curve is earned
+         by using the radar, not shipped with it.</p>
+    </figcaption>
+    <div class="chart-body"><svg id="calibration" role="img" aria-label="Predicted transferability against observed relevance"></svg></div>
+    <p class="calib-verdict" id="calib-verdict"></p>
+  </figure>
+
+  <figure class="card chart-card wide">
+    <figcaption>
+      <h2>Category against business capability</h2>
+      <p>Which parts of the bank each risk category touches. Darker means more events —
+         and the capability is also the routing key for who gets asked.</p>
+    </figcaption>
+    <div class="chart-body scroll-x"><svg id="heatmap" role="img" aria-label="Heatmap of risk categories against business capabilities"></svg></div>
+    <div class="legend" id="heat-legend"></div>
+  </figure>
+
+  <section class="card">
+    <div class="list-head">
+      <h2>Ranked events</h2>
+      <div class="list-tools" aria-label="Event list pagination">
+        <!-- Filters set by clicking a chart, rendered from state. Without them
+             a reader who clicked a cell, scrolled, and came back has no way to
+             tell why the list is short — the click is off-screen by then. The
+             dropdowns above are self-describing; a chart click is not. -->
+        <span class="filter-chips" id="filter-chips"></span>
+        <label class="page-size">
+          <span>Rows</span>
+          <select id="page-size" aria-label="Rows per page">
+            <option value="10" selected>10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </label>
+        <span class="count" id="event-count" aria-live="polite"></span>
+        <button class="page-btn" id="page-prev" type="button" aria-label="Previous page">&#8249;</button>
+        <button class="page-btn" id="page-next" type="button" aria-label="Next page">&#8250;</button>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table id="event-table">
+        <thead>
+          <tr>
+            <th class="sortable" data-sort="priority" aria-sort="descending">Priority</th>
+            <th>Type</th>
+            <th>Event</th>
+            <th>Category</th>
+            <th class="sortable" data-sort="severity">Cell</th>
+            <th class="sortable" data-sort="transferability">Transfer.</th>
+            <th class="sortable" data-sort="reported">Reported</th>
+            <th>Owners</th>
+            <th class="sortable" data-sort="sources">Src</th>
+          </tr>
+        </thead>
+        <tbody id="event-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="export-footer" aria-label="Data export">
+    <span>Download event data</span>
+    <div class="export-actions">
+      <a class="btn" id="dl-csv" href="downloads/radar.csv" download>Export CSV</a>
+      <a class="btn" id="dl-json" href="downloads/radar.json" download>Export JSON</a>
+    </div>
+  </footer>
+</main>
+
+<aside class="drawer" id="drawer" hidden>
+  <button class="drawer-close" id="drawer-close" aria-label="Close">&times;</button>
+  <div id="drawer-body"></div>
+</aside>
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="tooltip" id="tooltip" hidden></div>
+
+<script src="static/demo-api.js"></script>
+<script src="static/app.js"></script>
+</body>
+</html>
