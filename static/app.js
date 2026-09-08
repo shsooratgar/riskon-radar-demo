@@ -1186,43 +1186,8 @@ function renderLegends() {
     `<span>fewer <span class="ramp">${ramp}</span> more events</span>`;
 }
 
-/* The two-engine switch. Private runs a local open-source model — nothing
-   leaves the machine. Frontier runs a hosted model — stronger, particularly on
-   German and on Level-2. Both are permitted by the brief, and swapping is a
-   setting rather than a rebuild, which is the whole point of the design. */
 function renderMode() {
-  const m = state.meta.llm;
-  const local = $("mode-local");
-  const frontier = $("mode-frontier");
-  const openai = $("mode-openai");
-
-  local.setAttribute("aria-pressed", String(m.backend === "local"));
-  frontier.setAttribute("aria-pressed", String(m.backend === "anthropic"));
-  if (openai) openai.setAttribute("aria-pressed", String(m.backend === "openai"));
-
-  local.disabled = !m.local_available;
-  frontier.disabled = !m.anthropic_available;
-  if (openai) openai.disabled = !m.openai_available;
-
-  local.title = m.local_available
-    ? `local · ${m.local_model} — no data leaves this machine`
-    : "ollama is not running";
-  frontier.title = m.anthropic_available
-    ? `hosted · ${m.frontier_model} — highest accuracy`
-    : "no Anthropic credentials configured";
-  if (openai) {
-    openai.title = m.openai_available
-      ? `hosted · ${m.openai_model} — OpenAI / Kimi API`
-      : "no OPENAI_API_KEY / KIMI_API_KEY configured";
-  }
-
-  const note = {
-    local: `${m.local_model} · offline, nothing leaves this machine`,
-    anthropic: `${m.frontier_model} · highest accuracy`,
-    openai: `${m.openai_model} · OpenAI / Kimi cloud engine`,
-    none: "no engine available — rules baseline only",
-  }[m.backend] || `${m.backend} engine active`;
-  $("mode-note").textContent = note;
+  $("mode-note").textContent = "Reasoned scores · frozen for this public demo";
 }
 
 async function setMode(backend) {
@@ -1342,8 +1307,8 @@ async function load() {
   if (deepLink) openDrawer(deepLink);
 }
 
-$("mode-local").addEventListener("click", () => setMode("local"));
-$("mode-frontier").addEventListener("click", () => setMode("anthropic"));
+if ($("mode-local")) $("mode-local").addEventListener("click", () => setMode("local"));
+if ($("mode-frontier")) $("mode-frontier").addEventListener("click", () => setMode("anthropic"));
 if ($("mode-openai")) $("mode-openai").addEventListener("click", () => setMode("openai"));
 
 // The threshold is a toggle, not a slider. A continuous 0.00-0.90 control asks

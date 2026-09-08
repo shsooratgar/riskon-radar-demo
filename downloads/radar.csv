@@ -1,130 +1,130 @@
-event_id,event_type,title,priority,orx_l1,transferability,likelihood,impact,reported_on,article_count
-ev_7d960db91c06,capability_shift,OpenAI explains how its naughty AI agents attacked Hugging Face,0.5518,External Fraud,0.16,2,C,2026-08-26,1
-ev_f71241980e25,capability_shift,AI agent suggested installing a malware package. Engineer almost took its advice,0.5415,External Fraud,0.1906,2,C,2026-08-20,1
-ev_a26e09ab0dc2,capability_shift,AnonyMousKIT PhaaS uses voice AI agents to phish iPhone passcodes,0.4758,External Fraud,0.2032,2,D,2026-08-25,1
-ev_d87176e4fd12,capability_shift,Autonomous AI attacks pose clear and present danger to critical infrastructure,0.4526,External Fraud,0.2158,2,D,2026-08-14,1
-ev_c85106fabd51,incident,Armadin and Tenex.ai executed the largest controlled live AI cyberattack on record for a leading global institution.,0.4251,External Fraud,0.2067,2,D,2026-08-22,1
-ev_245c9d75cabe,incident,FCA bans trio behind £35.5m scheme designed to bypass visa rules,0.4226,unclassified,0.1906,4,A,,1
-ev_7eb6da6e68cb,incident,FCA bans senior manager for lack of honesty and integrity,0.415,unclassified,0.16,4,A,,1
-ev_aed66ad1cf2d,capability_shift,Ubiquiti patches three maximum-severity security vulnerabilities that can be exploited remotely without privileges.,0.3771,Employment Practices and Workplace Safety,0.1726,3,C,2026-08-26,1
-ev_cab176e7eca6,incident,FCA fines and bans former SVS Securities CEO,0.3576,unclassified,0.2266,4,C,,1
-ev_96eed7ffa4bd,incident,33-hour BGP hijack of Softaculous traffic prompts security scramble,0.3248,External Fraud,0.1852,3,D,2026-09-01,2
-ev_790a5e32477d,incident,"FBI seizes hacking tools it says China used to attack NASA, DOE, US Senate and other critical networks",0.3207,External Fraud,0.2063,3,D,2026-08-27,1
-ev_4d314b5649c4,incident,ATF responds to 'major' cybersecurity incident after ransomware gang's claims,0.3199,External Fraud,0.2032,3,D,2026-08-27,1
-ev_daf7df16a280,incident,New malware delivery method using fake OpenAI Codex ads identified.,0.3194,External Fraud,0.2158,3,D,2026-08-25,1
-ev_71f5dbc11165,incident,CRPx0 hacking service for dummies claims victim count more than quintupled,0.317,External Fraud,0.1906,3,D,2026-08-27,1
-ev_b8f79103a1bd,incident,Attack hides malware in PNGs and drops custom reverse tunnel on victims' machines,0.3169,External Fraud,0.16,3,D,2026-08-31,1
-ev_924d0303dc3f,capability_shift,Vulnerability in Siemens Desigo DXR and PXC Controllers allows denial of service via malformed BACnet packets.,0.3157,unclassified,0.2158,4,C,2026-08-18,5
-ev_f0833cfdea33,incident,Massive DDoS attack disrupts Norway’s government digital services,0.3145,unclassified,0.16,4,C,2026-08-25,1
-ev_91b627f0d96d,incident,TerminalFix campaign deploys a reverse tunnel through multistage intrusion,0.3133,External Fraud,0.16,3,D,2026-08-29,1
-ev_dfd306df68ff,incident,Hackers poison popular Rust crates to steal developers' credentials,0.3127,External Fraud,0.2158,3,D,2026-08-21,1
-ev_aae5ee5910ef,capability_shift,Hackers abuse npm mirrors to host phishing redirect pages,0.3094,External Fraud,0.1726,3,D,2026-08-25,1
-ev_8af6c3b86db3,capability_shift,Critical OS command injection vulnerability identified in Haiwell IoT Cloud HMI Gateway,0.308,unclassified,0.2158,4,C,2026-08-13,1
-ev_6ecc8b8f6810,regulatory_change,"The EU has introduced new customs fees for small packages from non-EU countries, affecting Shein's operations.",0.3076,Employment Practices and Workplace Safety,0.172,3,D,2026-08-24,1
-ev_68cd19457c6e,incident,Nutex Health reports data stolen in cyberattack,0.3072,Employment Practices and Workplace Safety,0.1631,3,D,2026-08-25,1
-ev_feca6129d8d5,incident,FINMA concludes proceedings against Wendelspiess Partners AG and imposes long-term industry bans,0.3061,unclassified,0.2752,4,A,2026-06-03,1
-ev_9844cc80f11c,capability_shift,Vulnerabilities in CISA Malcolm allow for denial-of-service and arbitrary code execution,0.3032,unclassified,0.16,4,C,2026-08-18,1
-ev_cac8bc205813,incident,"Nearly 22,000 Microsoft Exchange servers vulnerable to hijack attacks",0.2995,unclassified,0.2464,4,D,2026-09-01,1
-ev_9396dc63a44e,capability_shift,New vulnerability in AVEVA Enterprise SCADA could allow code execution during deserialization.,0.2987,unclassified,0.1726,4,C,2026-08-13,1
-ev_29aaa82871de,incident,Hunting MacSync Stealer infrastructure through behavioral pivots,0.2956,External Fraud,0.16,3,D,2026-08-18,1
-ev_eb5cdd048c24,capability_shift,Feds warn of AI-made code being used to hack critical infrastructure controllers.,0.2947,unclassified,0.115,4,C,2026-08-19,1
-ev_247b6e62f76c,incident,Five Venezuelans plead guilty to ATM jackpotting attacks in US,0.2947,unclassified,0.2266,4,D,2026-09-01,1
-ev_8bbd1117e8aa,incident,Scottish prosecutors investigate supplier after staff data exposure,0.2942,Employment Practices and Workplace Safety,0.18,3,D,2026-08-14,1
-ev_a5faf1593900,incident,Recently patched PaperCut zero-days used in data theft attacks,0.2921,unclassified,0.2158,4,D,2026-09-01,2
-ev_005c3e1d7ee4,incident,Low water levels in the Rhine disrupt shipping routes to Switzerland,0.2907,Employment Practices and Workplace Safety,0.1705,3,D,2026-08-13,1
-ev_6a536a5607ac,incident,Critical Langflow flaw exploited to steal OpenAI and AWS keys,0.2891,unclassified,0.2032,4,D,2026-09-01,1
-ev_a345ae41cc34,incident,Schrödinger's backup: not actually recovered until you try to restore IT,0.2882,Business Disruption and System Failures,0.2338,4,D,2026-08-27,1
-ev_45e6aeafc882,incident,CISA Adds Two Known Exploited Vulnerabilities to Catalog,0.2874,unclassified,0.2032,4,D,2026-08-31,1
-ev_8629cd5c6f22,incident,Hackers exploit critical Gitea flaw in code injection attacks,0.2844,unclassified,0.2243,4,D,2026-08-26,1
-ev_87f52a83e9b6,incident,Cronos blockchain restarts after $74 million Tectonic exploit,0.2815,unclassified,0.1852,4,D,2026-08-31,1
-ev_2d51f5a32f35,incident,CISA Adds Three Known Exploited Vulnerabilities to Catalog,0.2811,unclassified,0.2032,4,D,2026-08-27,1
-ev_e6577e9d1f1f,incident,AK-74: In der Schweiz verboten – und doch legal zu erwerben,0.2804,unclassified,0.167,4,D,2026-09-01,1
-ev_1f9ce57f97ea,incident,CISA: Most exploited vulnerabilities should have been eradicated decades ago,0.2797,unclassified,0.1906,4,D,2026-08-28,1
-ev_53ab6ae288e9,incident,Aesto Health says data breach affects over 9.5 million patients,0.2787,unclassified,0.16,4,D,2026-09-01,1
-ev_6d805b23e0ff,incident,Geschäfte mit Kuwait: Pierre Mirabaud muss wegen Bestechung und Geldwäscherei vor Gericht,0.2772,unclassified,0.167,4,D,2026-08-30,1
-ev_dc19695266df,incident,Ebyte NA111-M,0.2769,unclassified,0.1852,4,D,2026-08-27,1
-ev_89ea0bc2a863,incident,CISA Adds Six Known Exploited Vulnerabilities to Catalog,0.2766,unclassified,0.1906,4,D,2026-08-26,1
-ev_ae4e04df9a83,incident,Millions of records allegedly plundered from corporate Azure tenants by a crook.,0.2761,unclassified,0.2453,4,D,2026-08-31,3
-ev_329571238780,incident,Boston Scientific says cyberattack disrupted operations globally,0.2758,Business Disruption and System Failures,0.1937,4,D,2026-08-26,2
-ev_4709197615ac,incident,CISA Adds One Known Exploited Vulnerability to Catalog,0.2751,unclassified,0.1906,4,D,2026-08-25,1
-ev_c0933f8ad33d,incident,Xiiaozet LK100W,0.2739,unclassified,0.1726,4,D,2026-08-27,1
-ev_5e8e9b6bf55e,incident,CISA Adds One Known Exploited Vulnerability to Catalog,0.2737,unclassified,0.1906,4,D,2026-08-24,1
-ev_01a8c86985ff,incident,US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline,0.2716,unclassified,0.2065,4,D,2026-08-20,1
-ev_5a503f068f91,regulatory_change,"EBA E-mail alert 25 August, 2026",0.2708,unclassified,0.172,4,D,2026-08-25,1
-ev_15930fb6d478,incident,CISA Adds Two Known Exploited Vulnerabilities to Catalog,0.2708,unclassified,0.2032,4,D,2026-08-20,1
-ev_ce208a87c236,incident,"Carhartt data breach affects 12.9M, half of what ShinyHunters claimed",0.2695,unclassified,0.16,4,D,2026-08-26,1
-ev_378276dac684,capability_shift,New GPUThor attack defeats NVIDIA ECC protection for root access,0.2695,unclassified,0.16,4,D,2026-08-26,1
-ev_e8ea0864dac9,incident,CISA Adds One Known Exploited Vulnerability to Catalog,0.2694,unclassified,0.1906,4,D,2026-08-21,1
-ev_6d14bb127ffe,incident,CISA adds new vulnerabilities to the Known Exploited Vulnerabilities Catalog and reinforces vulnerability management requirements.,0.266,unclassified,0.1937,4,D,2026-08-18,1
-ev_a38c66fd2c7d,incident,bunq B. V.: Bafin setzt Bußgeld fest,0.2656,unclassified,0.143,4,D,2026-08-26,1
-ev_275e0256b4c8,incident,CISA adds new vulnerability to Known Exploited Vulnerabilities Catalog and reinforces vulnerability management requirements.,0.2645,unclassified,0.1811,4,D,2026-08-19,1
-ev_32d422a2e297,incident,CISA adds new vulnerability to Known Exploited Vulnerabilities Catalog and reinforces vulnerability management requirements.,0.2619,unclassified,0.1811,4,D,2026-08-17,1
-ev_179e762b4681,regulatory_change,"EBA E-mail alert 26 August, 2026",0.2619,unclassified,0.127,4,D,2026-08-26,1
-ev_4ae927f18386,incident,Iran-linked cyberattack shut down a UK power plant,0.2617,unclassified,0.1385,4,D,2026-08-24,1
-ev_e7aeda630c5c,incident,Ransomware crook poses as recovery firm to steal payments from fellow extortionists,0.2611,unclassified,0.16,4,D,2026-08-20,1
-ev_0942012439a0,incident,Nuisance-call blocker fined £190k for being a nuisance caller,0.2605,unclassified,0.115,4,D,2026-08-27,1
-ev_21f6bb89b9c4,incident,Two Alleged ‘TeamPCP’ Hackers Arrested in Australia,0.2605,unclassified,0.115,4,D,2026-08-27,1
-ev_58cb6f20fdb5,regulatory_change,CISA imposes a three-day patching deadline for Oracle flaw.,0.2605,unclassified,0.127,4,D,2026-08-25,1
-ev_28205c1e72cb,capability_shift,Vulnerability in Johnson Controls Metasys allows for potential session hijacking via XSS attack.,0.2601,unclassified,0.196,4,D,2026-08-13,1
-ev_cd41e7a34289,incident,Australian hotel chain leaks guests’ PII after breach at third-party database operator,0.2598,unclassified,0.16,4,D,2026-08-19,1
-ev_6dc7f21ac25e,incident,"Novocure data breach affects more than 1,400 cancer patients",0.2592,unclassified,0.1806,4,D,2026-09-01,1
-ev_dc8aee876e17,incident,BforBank SA: Bafin setzt Bußgeld fest,0.2591,unclassified,0.115,4,D,2026-08-26,1
-ev_72277a1322fd,incident,Wise Europe SA: Bafin setzt Bußgeld fest,0.2591,unclassified,0.115,4,D,2026-08-26,1
-ev_4e1538621d78,regulatory_change,Rundschreiben 09/2026 (WA) - WpI MaRisk,0.2591,unclassified,0.127,4,D,2026-08-24,1
-ev_529f2433ecaf,regulatory_change,Anschreiben zum Rundschreiben 09/2026 (WA),0.2591,unclassified,0.127,4,D,2026-08-24,1
-ev_effc9e147018,incident,Johnson Controls Inc. Airwall vulnerabilities allow unauthorized access and data decryption,0.2585,unclassified,0.1887,4,D,2026-08-13,1
-ev_82453bd58f1c,incident,DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure,0.258,unclassified,0.2032,4,D,2026-08-10,1
-ev_b11c44cfe73e,incident,More than 100 water systems were hit in July cyberattacks,0.2556,External Fraud,0.2158,3,D,2026-08-26,1
-ev_23d138daea3e,incident,1.6M RingCentral accounts' data dumped after ShinyHunters extortion attack,0.2538,unclassified,0.1615,4,D,2026-08-14,1
-ev_f76e925409d3,regulatory_change,Claudia Buch outlines the need for reforms in banking regulation and supervision at the European Parliament hearing.,0.2529,Employment Practices and Workplace Safety,0.1972,3,D,2026-07-02,1
-ev_7b815b3af142,incident,"Trezor confirms 13,000 customers' details exposed in logistics breach",0.2527,unclassified,0.1565,4,D,2026-08-14,1
-ev_73767703d6c2,incident,"French tax authority says break-in exposed data of 600K, including some private messages",0.2525,Damage to Physical Assets,0.1215,4,D,2026-08-20,2
-ev_3d2f095adb37,incident,AliExpress accused of fingerprinting shoppers with silent audio trick,0.2523,unclassified,0.0975,4,D,2026-08-24,1
-ev_e73d8937e081,incident,Trump wants to grant private cyber firms a license to hack back,0.2523,unclassified,0.16,4,D,2026-08-13,1
-ev_fb97f876af40,regulatory_change,Rundschreiben 05/2026 (WA) - Verwaltungspraxis zum Übernahmerecht,0.2512,unclassified,0.127,4,D,2026-08-18,1
-ev_cafe53d7bd80,incident,CISA gives feds 3 days to fix actively exploited Ray RCE bug,0.2485,unclassified,0.115,4,D,2026-08-18,1
-ev_2504bbf39680,regulatory_change,ECB publishes results of 2026 geopolitical risk reverse stress test,0.248,unclassified,0.208,4,D,2026-07-31,1
-ev_d97b6978a171,regulatory_change,FINMA welcomes the Federal Council’s consultation drafts on the legislative package to strengthen the “too big to fail” framework,0.2439,unclassified,0.127,4,D,2026-08-12,1
-ev_6d0468865178,incident,From open lures to cloaked gates: How a macOS ClickFix campaign learned to hide,0.2432,unclassified,0.16,4,D,2026-08-05,1
-ev_7b2df4c497c9,incident,Geschäftsleiter: Bafin verwarnt Geschäftsleiter,0.2391,unclassified,0.115,4,D,2026-08-10,1
-ev_2c968a8cfc9b,regulatory_change,"EBA E-mail alert 5 August, 2026",0.2363,unclassified,0.127,4,D,2026-08-05,1
-ev_0eb3a1d758b0,regulatory_change,"EBA E-mail alert 23 July, 2026",0.2356,unclassified,0.1846,4,D,2026-07-23,1
-ev_90944ab28ffd,incident,Norddeutsche Landesbank Girozentrale (Nord/LB): Bafin ordnet Mängelbeseitigung an,0.2318,unclassified,0.115,4,D,2026-08-03,1
-ev_51b7c8af0929,incident,2026-009: Critical Vulnerabilities in Microsoft SharePoint,0.2307,unclassified,0.16,4,D,2026-07-23,1
-ev_35987e8cb2f9,regulatory_change,FINMA guidance on quantum computing,0.2302,unclassified,0.2152,4,D,2026-07-09,1
-ev_2dbc5ecfdd2b,regulatory_change,Rundschreiben 08/2026 (WA),0.2277,unclassified,0.127,4,D,2026-07-27,1
-ev_5d32699e4c3e,incident,TeamViewer SE: Bafin setzt Geldbuße fest,0.2249,unclassified,0.143,4,D,2026-07-20,1
-ev_ecf4e7690761,incident,FINMA concludes proceedings against Swiss Fund Management AG in liquidation and BZ Berater Zentrum AG and enforces rules of conduct in the financial services sector,0.2212,unclassified,0.2032,4,D,2026-06-29,1
-ev_23544b5e3ebb,regulatory_change,FINMA publishes a new ordinance on the liquidity of banks and securities firms,0.2207,unclassified,0.172,4,D,2026-07-07,1
-ev_4974bdf135a9,regulatory_change,"EBA E-mail alert 17 July, 2026",0.2194,unclassified,0.127,4,D,2026-07-17,1
-ev_2d174db94617,regulatory_change,Rundschreiben 07/2026 (GW),0.2164,unclassified,0.127,4,D,2026-07-13,1
-ev_ac0369c53049,regulatory_change,ECB streamlines supervisory guidance to improve clarity and transparency,0.216,unclassified,0.1846,4,D,2026-06-26,1
-ev_feb7211445df,regulatory_change,ECB publishes supervisory banking statistics for significant institutions in Q1 2026,0.2144,unclassified,0.1972,4,D,2026-06-19,1
-ev_dd6d14ed876e,regulatory_change,FINMA publishes guidance on managing digital fraud risks,0.2141,External Fraud,0.172,3,D,2026-04-09,1
-ev_ef66e2290eac,regulatory_change,ECB emphasizes the need for banks to strengthen resilience to geopolitical risks and digital transformation strategies.,0.212,unclassified,0.172,4,D,2026-06-23,1
-ev_1fe18e2a6a68,regulatory_change,ECB discusses simplification of regulatory framework to enhance bank competitiveness.,0.2099,unclassified,0.172,4,D,2026-06-19,1
-ev_429a2b5128e3,regulatory_change,Vergleichsversion der 8. MaRisk Novelle zur 9. MaRisk Novelle,0.2078,unclassified,0.127,4,D,2026-06-30,1
-ev_4c9ca37cabba,regulatory_change,Rundschreiben 06/2026 (BA),0.2078,unclassified,0.127,4,D,2026-06-30,1
-ev_6c7702a55592,regulatory_change,Vergleichsversion der Konsultationsfassung zur Veröffentlichungsfassung der 9. MaRisk Novelle,0.2078,unclassified,0.127,4,D,2026-06-30,1
-ev_1cefca51ac87,incident,2026-007: Critical Vulnerability in Windows Netlogon,0.2078,unclassified,0.1852,4,D,2026-06-10,1
-ev_f6bc94a7863a,regulatory_change,ECB emphasizes the need for banks to strengthen cyber resilience against evolving threats.,0.2077,unclassified,0.1846,4,D,2026-06-10,1
-ev_fff5a22dea11,incident,"FBI Seizes NetNut Proxy Platform, Popa Botnet",0.2068,unclassified,0.115,4,D,2026-07-02,1
-ev_91e60f8506a2,regulatory_change,Rundschreiben 01/2026 (VA): Hinweise der Bafin zum Betrieb von Lösegeldversicherungen,0.2055,Employment Practices and Workplace Safety,0.127,3,D,2026-04-01,1
-ev_ba97bb667dee,regulatory_change,FINMA publishes supplementary guidance on money laundering risk analysis,0.2029,unclassified,0.172,4,D,2026-06-04,1
-ev_f360b9f9d228,incident,LACMA data breach exposed social security and medical data,0.2019,External Fraud,0.1757,3,D,2026-08-25,1
-ev_f9af6a7a2123,incident,BKW completes the removal of 418 fuel elements from the Mühleberg nuclear power plant as part of its decommissioning process.,0.201,Employment Practices and Workplace Safety,0.1705,3,D,2026-08-15,1
-ev_324bc7250708,incident,Landesbank Hessen-Thüringen Girozentrale (Helaba): Bafin ordnet Mängelbeseitigung an,0.2002,unclassified,0.115,4,D,2026-07-20,1
-ev_6c413e7b6b5c,regulatory_change,FINMA publishes new ordinance on risk diversification for banks and securities firms,0.1974,unclassified,0.172,4,D,2026-05-20,1
-ev_77cc03999421,regulatory_change,ECB discusses increased complexity and risks for financial conglomerates in current environment,0.1956,unclassified,0.127,4,D,2026-06-05,1
-ev_90f281acf310,incident,Data theft in Liechtenstein affects Swiss customers and prompts calls for reform.,0.1948,Employment Practices and Workplace Safety,0.1295,3,D,2026-08-27,1
-ev_b22b845748cc,regulatory_change,Rundschreiben 04/2026 (BA),0.1899,unclassified,0.127,4,D,2026-05-20,1
-ev_b029c4ea4013,regulatory_change,FINMA launches consultation on partial revision of the FINMA Anti-Money Laundering Ordinance,0.1875,unclassified,0.127,4,D,2026-05-12,1
-ev_b71019ef3ed2,incident,2026-004: Critical Vulnerability in SharePoint Exploited,0.1842,unclassified,0.1726,4,D,2026-03-25,1
-ev_b3bf362bc4e0,incident,2026-001: Critical vulnerabilities in Ivanti EPMM,0.1838,unclassified,0.196,4,D,2026-01-30,1
-ev_1d0a39ba3658,incident,2026-002: Multiple Vulnerabilities in Cisco Products,0.1822,unclassified,0.1726,4,D,2026-02-26,1
-ev_f38aece0e23b,regulatory_change,Rundschreiben 08/2025 (GW),0.1763,unclassified,0.172,4,D,2025-07-04,1
-ev_22523a13f4a1,regulatory_change,Rundschreiben 11/2025 (BA),0.1702,unclassified,0.127,4,D,2025-10-22,1
-ev_49aca46b1df7,regulatory_change,Rundschreiben 11/2025 (BA) zu den Mitgliedern der Geschäftsleitung sowie von Verwaltungs- und Aufsichtsorganen gemäß KWG,0.1702,unclassified,0.127,4,D,2025-10-21,1
-ev_9f25675e5c92,regulatory_change,Rundschreiben 10/2025 (BA),0.1699,unclassified,0.127,4,D,2025-09-22,1
-ev_46169a8d1f4f,regulatory_change,Rundschreiben 09/2025 (VA) - Aufsichtsrechtliche Mindestanforderungen an die Geschäftsorganisation von Versicherungsunternehmen unter Solvabilität II (MaGo für SII-VU),0.1696,unclassified,0.127,4,D,2025-07-14,1
-ev_52f9880f6201,regulatory_change,Rundschreiben 02/2025 (A),0.1694,unclassified,0.127,4,D,2025-02-12,1
+event_id,event_type,title,priority,category,transferability,likelihood,impact,reported_on,article_count
+ev_7d960db91c06,capability_shift,OpenAI explains how its naughty AI agents attacked Hugging Face,0.5949,External Fraud,0.526,2,C,2026-08-26,1
+ev_eb5cdd048c24,capability_shift,Feds warn of AI-made code being used to hack critical infrastructure controllers.,0.5624,External Fraud,0.4763,2,C,2026-08-19,1
+ev_f71241980e25,capability_shift,AI agent suggested installing a malware package. Engineer almost took its advice,0.5512,External Fraud,0.5337,2,C,2026-08-20,1
+ev_c85106fabd51,incident,Armadin and Tenex.ai executed the largest controlled live AI cyberattack on record for a leading global institution.,0.4953,External Fraud,0.608,2,D,2026-08-22,1
+ev_9844cc80f11c,capability_shift,Vulnerabilities in CISA Malcolm allow for denial-of-service and arbitrary code execution,0.4893,External Fraud,0.5205,2,C,2026-08-18,1
+ev_aed66ad1cf2d,capability_shift,Ubiquiti patches three maximum-severity security vulnerabilities that can be exploited remotely without privileges.,0.4869,External Fraud,0.54,2,C,2026-08-26,1
+ev_8af6c3b86db3,capability_shift,Critical OS command injection vulnerability identified in Haiwell IoT Cloud HMI Gateway,0.4793,External Fraud,0.5288,2,C,2026-08-13,1
+ev_87f52a83e9b6,incident,Cronos blockchain restarts after $74 million Tectonic exploit,0.4739,External Fraud,0.439,2,D,2026-08-31,1
+ev_924d0303dc3f,capability_shift,Vulnerability in Siemens Desigo DXR and PXC Controllers allows denial of service via malformed BACnet packets.,0.4716,External Fraud,0.4407,2,C,2026-08-18,5
+ev_9396dc63a44e,capability_shift,New vulnerability in AVEVA Enterprise SCADA could allow code execution during deserialization.,0.4706,External Fraud,0.4885,2,C,2026-08-13,1
+ev_245c9d75cabe,incident,FCA bans trio behind £35.5m scheme designed to bypass visa rules,0.4701,"Clients, Products and Business Practices",0.4478,3,A,2026-08-27,1
+ev_6a536a5607ac,incident,Critical Langflow flaw exploited to steal OpenAI and AWS keys,0.4684,External Fraud,0.5134,2,D,2026-09-01,1
+ev_d87176e4fd12,capability_shift,Autonomous AI attacks pose clear and present danger to critical infrastructure,0.4598,External Fraud,0.549,2,D,2026-08-14,1
+ev_378276dac684,capability_shift,New GPUThor attack defeats NVIDIA ECC protection for root access,0.4581,External Fraud,0.416,2,D,2026-08-26,1
+ev_4709197615ac,incident,CISA Adds One Known Exploited Vulnerability to Catalog,0.4505,External Fraud,0.6337,2,D,2026-08-25,1
+ev_6d805b23e0ff,incident,Geschäfte mit Kuwait: Pierre Mirabaud muss wegen Bestechung und Geldwäscherei vor Gericht,0.4501,External Fraud,0.5565,3,B,2026-08-30,1
+ev_dfd306df68ff,incident,Hackers poison popular Rust crates to steal developers' credentials,0.4492,External Fraud,0.4293,2,D,2026-08-21,1
+ev_3d2f095adb37,incident,AliExpress accused of fingerprinting shoppers with silent audio trick,0.4474,External Fraud,0.3906,2,D,2026-08-24,1
+ev_a5faf1593900,incident,Recently patched PaperCut zero-days used in data theft attacks,0.4462,External Fraud,0.5407,2,D,2026-09-01,2
+ev_b8f79103a1bd,incident,Attack hides malware in PNGs and drops custom reverse tunnel on victims' machines,0.4418,External Fraud,0.533,2,D,2026-08-31,1
+ev_f0833cfdea33,incident,Massive DDoS attack disrupts Norway’s government digital services,0.4368,External Fraud,0.574,2,C,2026-08-25,1
+ev_ae4e04df9a83,incident,Millions of records allegedly plundered from corporate Azure tenants by a crook.,0.4352,External Fraud,0.647,2,D,2026-08-31,3
+ev_21f6bb89b9c4,incident,Two Alleged ‘TeamPCP’ Hackers Arrested in Australia,0.4345,External Fraud,0.544,2,D,2026-08-27,1
+ev_91b627f0d96d,incident,TerminalFix campaign deploys a reverse tunnel through multistage intrusion,0.4333,External Fraud,0.638,2,D,2026-08-29,1
+ev_c0933f8ad33d,incident,Xiiaozet LK100W,0.431,External Fraud,0.5288,2,D,2026-08-27,1
+ev_e73d8937e081,incident,Trump wants to grant private cyber firms a license to hack back,0.4279,External Fraud,0.4119,2,D,2026-08-13,1
+ev_71f5dbc11165,incident,CRPx0 hacking service for dummies claims victim count more than quintupled,0.425,External Fraud,0.623,2,D,2026-08-27,1
+ev_35987e8cb2f9,regulatory_change,FINMA guidance on quantum computing,0.4155,External Fraud,0.6373,2,D,2026-07-09,1
+ev_a26e09ab0dc2,capability_shift,AnonyMousKIT PhaaS uses voice AI agents to phish iPhone passcodes,0.415,External Fraud,0.5106,3,D,2026-08-25,1
+ev_6d0468865178,incident,From open lures to cloaked gates: How a macOS ClickFix campaign learned to hide,0.4145,External Fraud,0.541,2,D,2026-08-05,1
+ev_1f9ce57f97ea,incident,CISA: Most exploited vulnerabilities should have been eradicated decades ago,0.4093,External Fraud,0.701,1,D,2026-08-28,1
+ev_e8ea0864dac9,incident,CISA Adds One Known Exploited Vulnerability to Catalog,0.4003,External Fraud,0.5727,2,D,2026-08-21,1
+ev_dc19695266df,incident,Ebyte NA111-M,0.3969,External Fraud,0.5026,2,D,2026-08-27,1
+ev_790a5e32477d,incident,"FBI seizes hacking tools it says China used to attack NASA, DOE, US Senate and other critical networks",0.3954,External Fraud,0.616,2,D,2026-08-27,1
+ev_96eed7ffa4bd,incident,33-hour BGP hijack of Softaculous traffic prompts security scramble,0.394,External Fraud,0.443,2,D,2026-09-01,2
+ev_effc9e147018,incident,Johnson Controls Inc. Airwall vulnerabilities allow unauthorized access and data decryption,0.3937,External Fraud,0.4941,2,D,2026-08-13,1
+ev_daf7df16a280,incident,New malware delivery method using fake OpenAI Codex ads identified.,0.3931,External Fraud,0.5047,2,D,2026-08-25,1
+ev_29aaa82871de,incident,Hunting MacSync Stealer infrastructure through behavioral pivots,0.3871,External Fraud,0.541,2,D,2026-08-18,1
+ev_01a8c86985ff,incident,US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline,0.3868,External Fraud,0.677,1,D,2026-08-20,1
+ev_53ab6ae288e9,incident,Aesto Health says data breach affects over 9.5 million patients,0.3858,External Fraud,0.5288,2,D,2026-09-01,1
+ev_82453bd58f1c,incident,DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure,0.3856,External Fraud,0.602,2,D,2026-08-10,1
+ev_7b815b3af142,incident,"Trezor confirms 13,000 customers' details exposed in logistics breach",0.3839,External Fraud,0.4407,2,D,2026-08-14,1
+ev_cac8bc205813,incident,"Nearly 22,000 Microsoft Exchange servers vulnerable to hijack attacks",0.3831,External Fraud,0.6378,2,D,2026-09-01,1
+ev_7eb6da6e68cb,incident,FCA bans senior manager for lack of honesty and integrity,0.38,"Clients, Products and Business Practices",0.4448,4,A,2026-08-27,1
+ev_45e6aeafc882,incident,CISA Adds Two Known Exploited Vulnerabilities to Catalog,0.3781,External Fraud,0.6261,2,D,2026-08-31,1
+ev_8629cd5c6f22,incident,Hackers exploit critical Gitea flaw in code injection attacks,0.3778,External Fraud,0.4293,2,D,2026-08-26,1
+ev_28205c1e72cb,capability_shift,Vulnerability in Johnson Controls Metasys allows for potential session hijacking via XSS attack.,0.3776,External Fraud,0.54,2,D,2026-08-13,1
+ev_aae5ee5910ef,capability_shift,Hackers abuse npm mirrors to host phishing redirect pages,0.3748,External Fraud,0.4254,2,D,2026-08-25,1
+ev_f6bc94a7863a,regulatory_change,ECB emphasizes the need for banks to strengthen cyber resilience against evolving threats.,0.3698,External Fraud,0.708,1,D,2026-06-10,1
+ev_2d51f5a32f35,incident,CISA Adds Three Known Exploited Vulnerabilities to Catalog,0.3698,External Fraud,0.6261,2,D,2026-08-27,1
+ev_4d314b5649c4,incident,ATF responds to 'major' cybersecurity incident after ransomware gang's claims,0.369,External Fraud,0.623,2,D,2026-08-27,1
+ev_89ea0bc2a863,incident,CISA Adds Six Known Exploited Vulnerabilities to Catalog,0.3677,External Fraud,0.6261,2,D,2026-08-26,1
+ev_23d138daea3e,incident,1.6M RingCentral accounts' data dumped after ShinyHunters extortion attack,0.3619,External Fraud,0.58,2,D,2026-08-14,1
+ev_4e1538621d78,regulatory_change,Rundschreiben 09/2026 (WA) - WpI MaRisk,0.3613,"Clients, Products and Business Practices",0.6459,3,D,2026-08-24,1
+ev_5a503f068f91,regulatory_change,"EBA E-mail alert 25 August, 2026",0.36,"Clients, Products and Business Practices",0.5118,3,D,2026-08-25,1
+ev_6d14bb127ffe,incident,CISA adds new vulnerabilities to the Known Exploited Vulnerabilities Catalog and reinforces vulnerability management requirements.,0.3599,External Fraud,0.6587,2,D,2026-08-18,1
+ev_ce208a87c236,incident,"Carhartt data breach affects 12.9M, half of what ShinyHunters claimed",0.3571,External Fraud,0.58,2,D,2026-08-26,1
+ev_68cd19457c6e,incident,Nutex Health reports data stolen in cyberattack,0.3567,External Fraud,0.587,2,D,2026-08-25,1
+ev_329571238780,incident,Boston Scientific says cyberattack disrupted operations globally,0.3549,External Fraud,0.579,2,D,2026-08-26,2
+ev_5e8e9b6bf55e,incident,CISA Adds One Known Exploited Vulnerability to Catalog,0.3488,External Fraud,0.4407,2,D,2026-08-24,1
+ev_15930fb6d478,incident,CISA Adds Two Known Exploited Vulnerabilities to Catalog,0.3459,External Fraud,0.58,2,D,2026-08-20,1
+ev_1cefca51ac87,incident,2026-007: Critical Vulnerability in Windows Netlogon,0.3448,External Fraud,0.65,2,D,2026-06-10,1
+ev_6dc7f21ac25e,incident,"Novocure data breach affects more than 1,400 cancer patients",0.3439,External Fraud,0.4896,2,D,2026-09-01,1
+ev_4ae927f18386,incident,Iran-linked cyberattack shut down a UK power plant,0.3424,External Fraud,0.533,2,D,2026-08-24,1
+ev_275e0256b4c8,incident,CISA adds new vulnerability to Known Exploited Vulnerabilities Catalog and reinforces vulnerability management requirements.,0.3416,External Fraud,0.5685,2,D,2026-08-19,1
+ev_cd41e7a34289,incident,Australian hotel chain leaks guests’ PII after breach at third-party database operator,0.3404,External Fraud,0.563,2,D,2026-08-19,1
+ev_cab176e7eca6,incident,FCA fines and bans former SVS Securities CEO,0.338,"Clients, Products and Business Practices",0.5659,4,C,2026-08-27,1
+ev_2504bbf39680,regulatory_change,ECB publishes results of 2026 geopolitical risk reverse stress test,0.3373,"Clients, Products and Business Practices",0.4776,3,D,2026-07-31,1
+ev_73767703d6c2,incident,"French tax authority says break-in exposed data of 600K, including some private messages",0.3367,External Fraud,0.5388,2,D,2026-08-20,2
+ev_90f281acf310,incident,Data theft in Liechtenstein affects Swiss customers and prompts calls for reform.,0.3351,External Fraud,0.6,2,B,2026-08-27,1
+ev_32d422a2e297,incident,CISA adds new vulnerability to Known Exploited Vulnerabilities Catalog and reinforces vulnerability management requirements.,0.3348,External Fraud,0.5533,2,D,2026-08-17,1
+ev_cafe53d7bd80,incident,CISA gives feds 3 days to fix actively exploited Ray RCE bug,0.3335,External Fraud,0.54,2,D,2026-08-18,1
+ev_6ecc8b8f6810,regulatory_change,"The EU has introduced new customs fees for small packages from non-EU countries, affecting Shein's operations.",0.3334,"Clients, Products and Business Practices",0.2844,3,D,2026-08-24,1
+ev_b11c44cfe73e,incident,More than 100 water systems were hit in July cyberattacks,0.3318,External Fraud,0.478,2,D,2026-08-26,1
+ev_a345ae41cc34,incident,Schrödinger's backup: not actually recovered until you try to restore IT,0.3295,Business Disruption and System Failures,0.651,4,D,2026-08-27,1
+ev_72277a1322fd,incident,Wise Europe SA: Bafin setzt Bußgeld fest,0.3292,"Clients, Products and Business Practices",0.6106,3,D,2026-08-26,1
+ev_179e762b4681,regulatory_change,"EBA E-mail alert 26 August, 2026",0.3275,"Clients, Products and Business Practices",0.4835,3,D,2026-08-26,1
+ev_fff5a22dea11,incident,"FBI Seizes NetNut Proxy Platform, Popa Botnet",0.327,External Fraud,0.447,2,D,2026-07-02,1
+ev_2c968a8cfc9b,regulatory_change,"EBA E-mail alert 5 August, 2026",0.3266,"Clients, Products and Business Practices",0.5118,3,D,2026-08-05,1
+ev_a38c66fd2c7d,incident,bunq B. V.: Bafin setzt Bußgeld fest,0.3254,"Clients, Products and Business Practices",0.5941,3,D,2026-08-26,1
+ev_529f2433ecaf,regulatory_change,Anschreiben zum Rundschreiben 09/2026 (WA),0.3197,"Clients, Products and Business Practices",0.5847,3,D,2026-08-24,1
+ev_8bbd1117e8aa,incident,Scottish prosecutors investigate supplier after staff data exposure,0.3187,External Fraud,0.5015,2,D,2026-08-14,1
+ev_0eb3a1d758b0,regulatory_change,"EBA E-mail alert 23 July, 2026",0.3161,"Clients, Products and Business Practices",0.6635,3,D,2026-07-23,1
+ev_7b2df4c497c9,incident,Geschäftsleiter: Bafin verwarnt Geschäftsleiter,0.3131,"Clients, Products and Business Practices",0.6541,3,D,2026-08-10,1
+ev_fb97f876af40,regulatory_change,Rundschreiben 05/2026 (WA) - Verwaltungspraxis zum Übernahmerecht,0.31,"Clients, Products and Business Practices",0.5847,3,D,2026-08-18,1
+ev_feca6129d8d5,incident,FINMA concludes proceedings against Wendelspiess Partners AG and imposes long-term industry bans,0.308,"Clients, Products and Business Practices",0.6459,4,A,2026-06-03,1
+ev_d97b6978a171,regulatory_change,FINMA welcomes the Federal Council’s consultation drafts on the legislative package to strengthen the “too big to fail” framework,0.3066,"Clients, Products and Business Practices",0.6106,3,D,2026-08-12,1
+ev_dc8aee876e17,incident,BforBank SA: Bafin setzt Bußgeld fest,0.3065,"Clients, Products and Business Practices",0.5129,3,D,2026-08-26,1
+ev_5d32699e4c3e,incident,TeamViewer SE: Bafin setzt Geldbuße fest,0.3064,"Clients, Products and Business Practices",0.5118,3,D,2026-07-20,1
+ev_90944ab28ffd,incident,Norddeutsche Landesbank Girozentrale (Nord/LB): Bafin ordnet Mängelbeseitigung an,0.3016,"Clients, Products and Business Practices",0.6447,3,D,2026-08-03,1
+ev_51b7c8af0929,incident,2026-009: Critical Vulnerabilities in Microsoft SharePoint,0.2963,External Fraud,0.5326,2,D,2026-07-23,1
+ev_4974bdf135a9,regulatory_change,"EBA E-mail alert 17 July, 2026",0.2958,"Clients, Products and Business Practices",0.5941,3,D,2026-07-17,1
+ev_f76e925409d3,regulatory_change,Claudia Buch outlines the need for reforms in banking regulation and supervision at the European Parliament hearing.,0.2907,"Clients, Products and Business Practices",0.5212,3,D,2026-07-02,1
+ev_4c9ca37cabba,regulatory_change,Rundschreiben 06/2026 (BA),0.2898,"Clients, Products and Business Practices",0.6459,3,D,2026-06-30,1
+ev_2d174db94617,regulatory_change,Rundschreiben 07/2026 (GW),0.2898,External Fraud,0.5835,3,D,2026-07-13,1
+ev_2dbc5ecfdd2b,regulatory_change,Rundschreiben 08/2026 (WA),0.2897,"Clients, Products and Business Practices",0.6282,3,D,2026-07-27,1
+ev_247b6e62f76c,incident,Five Venezuelans plead guilty to ATM jackpotting attacks in US,0.2835,External Fraud,0.54,4,D,2026-09-01,1
+ev_429a2b5128e3,regulatory_change,Vergleichsversion der 8. MaRisk Novelle zur 9. MaRisk Novelle,0.2803,"Clients, Products and Business Practices",0.5941,3,D,2026-06-30,1
+ev_b3bf362bc4e0,incident,2026-001: Critical vulnerabilities in Ivanti EPMM,0.2777,External Fraud,0.4915,2,D,2026-01-30,1
+ev_1fe18e2a6a68,regulatory_change,ECB discusses simplification of regulatory framework to enhance bank competitiveness.,0.2773,"Clients, Products and Business Practices",0.5024,3,D,2026-06-19,1
+ev_b71019ef3ed2,incident,2026-004: Critical Vulnerability in SharePoint Exploited,0.2694,External Fraud,0.6739,1,D,2026-03-25,1
+ev_23544b5e3ebb,regulatory_change,FINMA publishes a new ordinance on the liquidity of banks and securities firms,0.2668,"Clients, Products and Business Practices",0.6106,3,D,2026-07-07,1
+ev_77cc03999421,regulatory_change,ECB discusses increased complexity and risks for financial conglomerates in current environment,0.2648,"Clients, Products and Business Practices",0.6,3,D,2026-06-05,1
+ev_324bc7250708,incident,Landesbank Hessen-Thüringen Girozentrale (Helaba): Bafin ordnet Mängelbeseitigung an,0.2622,External Fraud,0.6541,3,D,2026-07-20,1
+ev_ef66e2290eac,regulatory_change,ECB emphasizes the need for banks to strengthen resilience to geopolitical risks and digital transformation strategies.,0.2615,"Clients, Products and Business Practices",0.639,3,D,2026-06-23,1
+ev_ba97bb667dee,regulatory_change,FINMA publishes supplementary guidance on money laundering risk analysis,0.261,External Fraud,0.7012,3,D,2026-06-04,1
+ev_6c7702a55592,regulatory_change,Vergleichsversion der Konsultationsfassung zur Veröffentlichungsfassung der 9. MaRisk Novelle,0.2582,"Clients, Products and Business Practices",0.5941,3,D,2026-06-30,1
+ev_58cb6f20fdb5,regulatory_change,CISA imposes a three-day patching deadline for Oracle flaw.,0.2547,Business Disruption and System Failures,0.462,4,D,2026-08-25,1
+ev_e7aeda630c5c,incident,Ransomware crook poses as recovery firm to steal payments from fellow extortionists,0.2505,External Fraud,0.4727,4,D,2026-08-20,1
+ev_1d0a39ba3658,incident,2026-002: Multiple Vulnerabilities in Cisco Products,0.2496,External Fraud,0.29,2,D,2026-02-26,1
+ev_b029c4ea4013,regulatory_change,FINMA launches consultation on partial revision of the FINMA Anti-Money Laundering Ordinance,0.2486,External Fraud,0.6882,3,D,2026-05-12,1
+ev_ecf4e7690761,incident,FINMA concludes proceedings against Swiss Fund Management AG in liquidation and BZ Berater Zentrum AG and enforces rules of conduct in the financial services sector,0.2459,"Clients, Products and Business Practices",0.5306,3,D,2026-06-29,1
+ev_22523a13f4a1,regulatory_change,Rundschreiben 11/2025 (BA),0.2448,"Clients, Products and Business Practices",0.5753,3,D,2025-10-22,1
+ev_feb7211445df,regulatory_change,ECB publishes supervisory banking statistics for significant institutions in Q1 2026,0.2433,"Clients, Products and Business Practices",0.5519,3,D,2026-06-19,1
+ev_6c413e7b6b5c,regulatory_change,FINMA publishes new ordinance on risk diversification for banks and securities firms,0.24,"Clients, Products and Business Practices",0.6188,3,D,2026-05-20,1
+ev_dd6d14ed876e,regulatory_change,FINMA publishes guidance on managing digital fraud risks,0.2358,External Fraud,0.668,3,D,2026-04-09,1
+ev_b22b845748cc,regulatory_change,Rundschreiben 04/2026 (BA),0.2343,"Clients, Products and Business Practices",0.5847,3,D,2026-05-20,1
+ev_f38aece0e23b,regulatory_change,Rundschreiben 08/2025 (GW),0.2322,External Fraud,0.6176,3,D,2025-07-04,1
+ev_52f9880f6201,regulatory_change,Rundschreiben 02/2025 (A),0.2321,"Clients, Products and Business Practices",0.6176,3,D,2025-02-12,1
+ev_9f25675e5c92,regulatory_change,Rundschreiben 10/2025 (BA),0.2317,"Clients, Products and Business Practices",0.4906,3,D,2025-09-22,1
+ev_ac0369c53049,regulatory_change,ECB streamlines supervisory guidance to improve clarity and transparency,0.2316,"Clients, Products and Business Practices",0.3435,3,D,2026-06-26,1
+ev_49aca46b1df7,regulatory_change,Rundschreiben 11/2025 (BA) zu den Mitgliedern der Geschäftsleitung sowie von Verwaltungs- und Aufsichtsorganen gemäß KWG,0.231,"Clients, Products and Business Practices",0.6035,3,D,2025-10-21,1
+ev_e6577e9d1f1f,incident,AK-74: In der Schweiz verboten – und doch legal zu erwerben,0.2308,Damage to Physical Assets,0.32,4,D,2026-09-01,1
+ev_f360b9f9d228,incident,LACMA data breach exposed social security and medical data,0.2291,External Fraud,0.566,2,D,2026-08-25,1
+ev_91e60f8506a2,regulatory_change,Rundschreiben 01/2026 (VA): Hinweise der Bafin zum Betrieb von Lösegeldversicherungen,0.2245,"Clients, Products and Business Practices",0.3672,3,D,2026-04-01,1
+ev_0942012439a0,incident,Nuisance-call blocker fined £190k for being a nuisance caller,0.2016,"Clients, Products and Business Practices",0.2224,4,D,2026-08-27,1
+ev_46169a8d1f4f,regulatory_change,Rundschreiben 09/2025 (VA) - Aufsichtsrechtliche Mindestanforderungen an die Geschäftsorganisation von Versicherungsunternehmen unter Solvabilität II (MaGo für SII-VU),0.1605,"Clients, Products and Business Practices",0.5,3,D,2025-07-14,1
+ev_005c3e1d7ee4,incident,Low water levels in the Rhine disrupt shipping routes to Switzerland,0.1395,Business Disruption and System Failures,0.2403,4,D,2026-08-13,1
+ev_f9af6a7a2123,incident,BKW completes the removal of 418 fuel elements from the Mühleberg nuclear power plant as part of its decommissioning process.,0.0777,Damage to Physical Assets,0.1154,4,D,2026-08-15,1
